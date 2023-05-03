@@ -1,0 +1,222 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/boardStyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="/assets/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="question_buttons.js" defer></script>
+
+</head>
+
+<body class="bg-dark">
+    <a href="#navigation"><i id="bars" class="fa-solid fa-bars fa-3x"></i></a>
+
+    <nav id="navigation">
+        <div>
+
+            <a href="https://twitter.com/mtcomfortelem" target="_blank">
+                <i id="twitter" class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+        </div>
+
+        <ul>
+            <i id="house" class="fa-solid fa-house fa-1x"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+        <a href="#"><i id="close" class="fa-regular fa-circle-xmark fa-2x"></i></a>
+    </nav>
+
+    <h1 style="text-align: center; color: white;">Let's test your knowledge...</h1>
+    <div class="container bg-dark">
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">Who was the first President of the United States?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="Grover Cleveland" autocomplete="off" checked> Grover Cleveland
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="Abraham Lincoln" autocomplete="off"> Abraham Lincoln
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="George Washington" autocomplete="off"> George Washington
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">What president is on the United States penny?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="Abraham Lincoln" autocomplete="off" checked> Abraham Lincoln
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="Woodrow Wilson" autocomplete="off"> Woodrow Wilson
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="Calvin Coolidge" autocomplete="off"> Calvin Coolidge
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president2">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president2"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">What is the name of our current President (2023)?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="Donald Trump" autocomplete="off" checked> Donald Trump
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="Joe Biden" autocomplete="off"> Joe Biden
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="George W. Bush" autocomplete="off"> George W. Bush
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president3">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president3"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">What political party was Abraham Lincoln associated with?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="National union party" autocomplete="off" checked> National union party
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="Republican party" autocomplete="off"> Republican party
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="Democratic party" autocomplete="off"> Democratic party
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president4">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president4"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">What President is on the $50 United States bill?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="Benjamin Franklin" autocomplete="off" checked> Benjamin Franklin
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="Millard Fillmore" autocomplete="off"> Millard Fillmore
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="Ulysses S. Grant" autocomplete="off"> Ulysses S. Grant
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president5">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president5"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">Who was the Vice President of Donald Trump?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="Nelson Rockefeller" autocomplete="off" checked> Nelson Rockefeller
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="Al Gore" autocomplete="off"> Al Gore
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="Mike Pence" autocomplete="off"> Mike Pence
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president6">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president6"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">Who is the President on the $20 United States bill?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="Andrew Jackson" autocomplete="off" checked> Andrew Jackson
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="Abraham Lincoln" autocomplete="off"> Abraham Lincoln
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="James Garfield" autocomplete="off"> James Garfield
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president7">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president7"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">Who is the only President to be born on Independence day (Fourth of July)?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="Franklin D. Roosevelt" autocomplete="off" checked> Franklin D. Roosevelt
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="William Howard Taft" autocomplete="off"> William Howard Taft
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="Calvin Coolidge" autocomplete="off"> Calvin Coolidge
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president8">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president8"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">Who is the only President to have twins?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="Donald Trump" autocomplete="off" checked> Donald Trump
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="Barack Obama" autocomplete="off"> Barack Obama
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="George W. Bush" autocomplete="off"> George W. Bush
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president9">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president9"></p>
+        </div>
+
+        <div class="container" style="border-bottom: 2px solid blue;">
+            <p style="color: white; font-weight: bolder; font-size: 20px;">Who was the first Vice President to become President after the death of a President?</p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="presidents" id="James K. Polk" autocomplete="off" checked> James K. Polk
+                </label>
+                <label class="btn btn-warning mx-3">
+                    <input type="radio" name="presidents" id="John Tyler" autocomplete="off"> John Tyler
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="presidents" id="Martin Van Buren" autocomplete="off"> Martin Van Buren
+                </label>
+            </div>
+            <button class="btn btn-info mx-5 my-4" id="which_president10">Think you're right?</button>
+            <p style="color: white; font-size: 20px;" id="correct_president10"></p>
+        </div>
+    </div>
+</body>
+
+</html>
