@@ -1,0 +1,53 @@
+@TextDetail: gold;
+@CardBackground: #2e0202;
+@CardOutline: rgb(160, 136, 0);
+@Background: #000000;
+@NameText: white;
+@FlipCard: rgba(0, 0, 0, 0.8);
+@CardBack: #120947;
+@GoldTextStroke: rgb(181, 154, 0);
+
+html {
+    background-color: #000000;
+}
+
+.pictureArea {
+    background-color: @CardOutline;
+    border-bottom: @CardOutline 4px solid;
+}
+
+.name p {
+    color: @NameText;
+}
+
+.presInfo {
+    color: @NameText;
+}
+
+.textArea {
+    background-color: @CardBackground;
+}
+
+.flip-card-inner {
+    border: 5px solid @CardOutline;
+}
+
+.flip-card:hover .flip-card-inner {
+    box-shadow: 7px -7px @FlipCard;
+
+}
+
+.flip-card-front {
+    color: @Background;
+    background-color: @CardOutline;
+}
+
+.flip-card-back {
+    background-color: @CardBack;
+    color: @NameText;
+}
+
+.flip-card-back h1 {
+    color: @TextDetail;
+    -webkit-text-stroke: 1px @GoldTextStroke;
+}
