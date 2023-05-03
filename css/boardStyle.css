@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-color: #000000;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav {
+    margin-bottom: 50px;
+    z-index: 99;
+}
+
+.pictureArea {
+    position: relative;
+    height: 175px;
+    width: 250px;
+    background-color: rgb(160, 136, 0);
+    border-radius: 11px 11px 0 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: rgb(160, 136, 0) 4px solid;
+    overflow: hidden;
+}
+
+.picture img {
+    height: 175px;
+    width: 250px;
+}
+
+.vikingPic img {
+    height: 50px;
+}
+
+.name p {
+    color: #f1f2f6;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+.presInfo {
+    margin-top: 30px;
+    color: #f1f2f6;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 250px;
+    background-color: #2e0202;
+    padding: 20px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    border-radius: 0 0 11px 11px;
+}
+
+
+/* FLIP CARD EFFECTS */
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 578px;
+    perspective: 500px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgb(160, 136, 0);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.6s box-shadow 0.3s;
+    transform-style: preserve-3d;
+    transition-duration: 0.7s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+    cursor: pointer;
+    box-shadow: 7px -7px rgba(0, 0, 0, 0.8);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: rgb(160, 136, 0);
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #120947;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 11px;
+    color: #f1f2f6;
+    font-family: sans-serif;
+    transform: rotateX(180deg);
+}
+
+.flip-card-back h1 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: gold;
+    font-weight: bold;
+    font-family: 'Chango', cursive;
+    -webkit-text-stroke: 1px rgb(181, 154, 0);
+}
+
+.flip-card-back p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    height: 470px;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 699px) {
+    nav {
+        margin-top: 0px !important;
+        position: absolute;
+    }
+
+    section {
+        padding-top: 50px;
+    }
+}
